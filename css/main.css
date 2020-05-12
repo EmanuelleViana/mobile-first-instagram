@@ -53,15 +53,18 @@ figure {
     height: 80px;
     overflow: hidden;
     max-width: 100%;
-    display: grid;
-    place-content: center;
+    /* display: grid; */
+    /* place-content: center; */
 }
 
 .stories__container {
-    margin: 10px;
-}
+	margin: 10px;
+    /* overflow-x: scroll; */
+    max-height: 90px;
+    display: flex;}
 
 .stories__img {
+	margin: 5px;
     height: 56px;
     width: 56px;
     border-radius: 50%;
