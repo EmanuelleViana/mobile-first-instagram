@@ -10,6 +10,10 @@ body {
     background: #fafafa;
 }
 
+figure {
+	margin: 0px;
+}
+
 .header {
     height: 60px;
     border-bottom: 1px solid #dbdbdb;
@@ -17,7 +21,7 @@ body {
     position: fixed;
     width: 100%;
     padding: 10px 20px;
-
+	z-index: 9999999;
 }
 
 .container {
@@ -74,19 +78,30 @@ body {
 
 .cards__item {
 	border-radius: 5px;
-	border: 1px solid rgba(128, 128, 128, 0.5);
+	border: 1px solid #dbdbdb;
 	background: white;
+	margin: 10px;
 }
 
 .cards__header {
+	margin: 10px;
 	display: flex;
 	justify-content: space-between;
+}
+
+.cards__header--titulo {
+    display: flex;
+    align-items: center;
 }
 
 .cards__header--img {
 	height: 42px;
 	width: 42px;
 	border-radius: 50%;
+	margin: 5px;
+}
+
+.cards--bordered-img {
     border: double 2px transparent;
     background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00, #fbff20);
     background-origin: border-box;
@@ -94,4 +109,17 @@ body {
 }
 .cards__foto--post {
 	width: 100%;
+}
+
+.cards__opcoes {
+	margin: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.cards__curtidas {
+	margin: 10px;
+}
+i {
+	cursor: pointer;
 }
