@@ -3,13 +3,95 @@
 *,
 *:after,
 *:before {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
+body {
+    background: #fafafa;
+}
 
+.header {
+    height: 60px;
+    border-bottom: 1px solid #dbdbdb;
+    background: #ffffff;
+    position: fixed;
+    width: 100%;
+    padding: 10px 20px;
 
+}
 
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90vh;
+    position: relative;
+}
 
+.header__logo {
+    width: 150px;
+}
 
+.header__menu {
+    font-size: large;
+}
 
+.header__searchbar {
+    display: none;
+}
 
+.main {
+    padding-top: 63px;
+}
+
+.stories {
+    height: 80px;
+    overflow: hidden;
+    max-width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.stories__container {
+    margin: 10px;
+}
+
+.stories__img {
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    border: double 4px transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00, #fbff20);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.posts {
+    display: grid;
+    place-content: center;	
+}
+
+.cards__item {
+	border-radius: 5px;
+	border: 1px solid rgba(128, 128, 128, 0.5);
+	background: white;
+}
+
+.cards__header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cards__header--img {
+	height: 42px;
+	width: 42px;
+	border-radius: 50%;
+    border: double 2px transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00, #fbff20);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.cards__foto--post {
+	width: 100%;
+}
